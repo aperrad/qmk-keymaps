@@ -89,11 +89,12 @@ Mes keymaps : https://github.com/aperrad/qmk-keymaps/ Avec des combos, un layer 
 # Inspiration 
 
 Autres claviers connus avec beaucoup de keymaps d'exemple de fonctionnalités :
-	* Corne https://github.com/qmk/qmk_firmware/tree/develop/keyboards/crkbd
-	* Kyria https://github.com/qmk/qmk_firmware/tree/develop/keyboards/splitkb/kyria
-	* Lily58 https://github.com/qmk/qmk_firmware/tree/develop/keyboards/lily58
-	* Sofle https://github.com/qmk/qmk_firmware/tree/develop/keyboards/sofle
-	* Et un peu tout dans le repo dans le dossier keyboards, c'est les principaux auquels je pense
+
+* Corne https://github.com/qmk/qmk_firmware/tree/develop/keyboards/crkbd
+* Kyria https://github.com/qmk/qmk_firmware/tree/develop/keyboards/splitkb/kyria
+* Lily58 https://github.com/qmk/qmk_firmware/tree/develop/keyboards/lily58
+* Sofle https://github.com/qmk/qmk_firmware/tree/develop/keyboards/sofle
+* Et un peu tout dans le repo dans le dossier keyboards, c'est les principaux auquels je pense
  
 Chercher sur les sites de ventes et voir les noms des claviers dans QMK/keyboards/XXX/keymaps
 
