@@ -41,7 +41,7 @@ RGBLIGHT_ANIMATIONS = no
 
 OLED_DRIVER_ENABLE  = yes
 
-
+USER_NAME := unknown_to_avoid_fetching_userspace
 
 SRC += keycodes.c
 SRC += combos.c
