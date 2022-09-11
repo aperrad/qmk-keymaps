@@ -20,7 +20,7 @@ https://docs.qmk.fm/#/newbs_getting_started à adapter en fonction de l'env
 	qmk setup 
 	
 
-	Info supplémentaire lors de mon installation : 
+    Info supplémentaire lors de mon installation : 
 		Option -H pour donner le dossier. Sans ca, c'est chercher dans C/Users/{userName}
 		Si dans le dossier git, lancer la commande  qmk setup -H ./qmk_firmware/ pour que ca fonctionne comme attendu
 
@@ -29,7 +29,8 @@ https://docs.qmk.fm/#/newbs_getting_started à adapter en fonction de l'env
 ## Compilation QMK 
 
 Pour tester, compiler la keymap du clavier par défaut avec la commande
-	qmk compile -kb cantor -km default
+	
+    qmk compile -kb cantor -km default
 
 ## Compiler & Flasher le clavier 
 
@@ -42,35 +43,38 @@ https://github.com/diepala/cantor
 
 To flash the firmware to the microcontroller connect the blackpill to your computer and set it to bootloader mode. To do this the first time:
 
-	* Press and hold the BOOT0 button.
-	* Press and release the NRST button.
-	* Release the BOOT0 button.
+  * Press and hold the BOOT0 button.
+  * Press and release the NRST button.
+  * Release the BOOT0 button.
 
 The following times you want to flash the keyboard, it is much simpler thanks to bootmagic. Hold the top left key of the keyboard and plug the microcontroller. If flashing the right part, hold the top right key. --> Pas testé, à valider.
 
 Puis, executer la commande : 
 
-qmk flash -kb <keyboard_name> -km <keymap_name> 
+    qmk flash -kb <keyboard_name> -km <keymap_name> 
 
 La compilation uniquement permet de valider que le code est correct sans le pousser sur le clavier.
 Pour compiler, il faut utiliser la commande 
-qmk compile -kb <keyboard_name> -km  <keymap_name>
+    
+    qmk compile -kb <keyboard_name> -km  <keymap_name>
 
 
 ## Gestion du code 
 
 Personnellement, j'ai créé un repository dedié à côté et je fais des liens symboliques de mes keymaps dans le dossier QMK, ca permet de mettre à jour facilement QMK si besoin de nouvelles fonctionnalités sans galérer à merge/rebase ou autre. 
 
-https://github.com/aperrad/qmk-keymaps/cantor en lien symbolique aperrad dans qmk/qmk_firmare/keyboard/cantor/keymaps 
-//FIXME La commande pour le faire sur Windows. Sinon le faire en copiant dedans est également faisable. 
+https://github.com/aperrad/qmk-keymaps/cantor en lien symbolique aperrad dans qmk/qmk_firmare/keyboard/cantor/keymaps --> A voir si possible et fonctionnel sur Windows
+
 
 J'ai créé une keymap french pour faciliter le démarrage. Pour les keycodes FR, il faut aller voir dans quantum\keymap_extras\keymap_french.h
 
 Pour la compiler, il faut lancer la commande suivante depuis le repo QMK :
-qmk compile -kb cantor -km french
+
+    qmk compile -kb cantor -km french
 
 Pour la flasher : 
-qmk flash -kb cantor -km french
+
+    qmk flash -kb cantor -km french
 
 
 
