@@ -1,0 +1,26 @@
+
+// left-top : dead accent
+ COMB(LT3,   KC_GRV,       KC_Q, KC_W)
+ COMB(LT2,   KC_QUOT,      KC_W, KC_F)
+ COMB(LT1,   KC_CIRC,      KC_F, KC_P)
+ COMB(LT0,   S(KC_QUOT),   KC_P, KC_B)
+
+// left-home : à & â
+COMB(LH3,    A_GRV,        KC_A, KC_R)
+COMB(LH2,    A_CIRC,       KC_A, KC_R, KC_S)
+
+// left-bottom
+// COMB(LB1,    KC_TAB,       KC_C, KC_D)
+// COMB(LB2,    S(KC_TAB),    KC_X, KC_C)
+
+// right-top
+// COMB(RT1,    KC_BSPC,      KC_U, KC_Y)
+
+// right-home : è & é
+COMB(RH3,   E_GRV,         KC_N, KC_E)
+COMB(RH2,   E_ACUTE,       KC_E, KC_I)
+
+// right-bottom
+// COMB(RB1,     KC_ENT,      KC_H, KC_COMM)
+// COMB(RB2,   KC_PIPE,     KC_COMM, KC_DOT)
+// COMB(RB3,   KC_BSLS,     KC_DOT, KC_SLSH)
